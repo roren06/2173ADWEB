@@ -1,0 +1,75 @@
+<div class="card">
+
+  <p><strong> -------- ADDING THE PIPE  ---------- </strong></p>
+
+  <p> Short date : {{presentDate | date:'shortDate' }}</p>
+
+  <p>  Medium date : {{presentDate | date:'mediumDate' }}</p>
+
+  <p>  Long date : {{presentDate | date:'longDate' }}</p>
+  <p> --------------------------------- </p>
+<br/>
+  
+</div>
+
+<div class="card">
+  <p> <strong> ---------DATES WITH PARAMETERS---------- </strong> </p>
+  <p> dd/mm/yyyy: {{ presentDate | date: 'y MM d'}}</p>
+  <p> dd/mm/yyyy: {{ presentDate | date: 'y MM d'}}</p>
+  <p> dd/mm/yyyy: {{ presentDate | date: 'y MM d'}}</p>
+  <p> --------------------------------- </p>  
+<br/>
+</div>
+
+<div class="card">
+  <p> <strong> -----------FORMATTING TIME-----------  </strong></p>
+  <p>Standard time: {{presentDate | date: 'shortTime'}}</p>
+  <p>Medium time {{presentDate | date: 'mediumTime'}}</p>
+  <p>Long time {{presentDate | date: 'longTime'}}</p>
+  <p> --------------------------------- </p>
+</div>
+
+<div class="card">
+  <p><strong> --------- CHAINED PIPES ----------</strong> </p>
+  <p> Date with uppercase: {{presentDate | date: 'fullDate' | uppercase }}</p>
+  <p> Date with lowercase: {{presentDate | date: 'fullDate' | lowercase }}</p>
+  <p> Date with lowercase: {{presentDate | date: 'fullDate' | lowercase }}</p>
+  <p> --------------------------------- </p>
+</div>
+
+<div class="card">
+  <p> <strong>--------- SECONDS CHANGING ----------</strong> </p>
+  <p> Seconds changing in Time: {{time$ | async | date:'mediumTime'}} </p>
+  <p> Seconds changing in Time: {{time$ | async | date:'mediumTime'}} </p>
+  <p> Seconds changing in Time: {{time$ | async | date:'mediumTime'}} </p>
+  <p> ---------------------------------------------------- </p>
+</div>
+
+<div class="card">
+  <p> <strong> --------- CURRENCY PIPE ----------</strong> </p>
+  <p> {{price | currency:'':true }} </p>
+  <p> {{price | currency:'INR' }} </p>
+  <p> {{price | currency:'INR' }} </p>
+  <p> ------------------------------------------- </p>
+</div>
+
+<div class="card">
+  <p> <strong> --------- SLICE PIPE ----------</strong> </p>
+  <h3> Start Index: {{ Fruits | slice: 2}}</h3>
+  <h4> Start and end index: {{Fruits | slice:1:4}}</h4>
+  <h5> Negative Index: {{ Fruits | slice: -2}}</h5>
+  <h6> Negative start and end index: {{Fruits | slice: -4:-2}}</h6>
+  <p> ------------------------------------------- </p>
+</div>
+
+<div class="card">
+  <p> <strong>  --------- DECIMAL PIPE ----------</strong> </p>
+    <p> Apply Formatting: {{decimalNum1 | number: '3.1'}}</p>
+    <p> Apply Formatting: {{decimalNum1 | number: '2.1-4'}}</p>
+    <p> Apply Formatting: {{decimalNum1 | number: '2.1-4'}}</p>
+  <p> ------------------------------------------- </p>
+</div>
+
+
+
+
